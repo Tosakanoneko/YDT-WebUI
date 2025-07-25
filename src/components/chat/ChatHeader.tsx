@@ -1,5 +1,6 @@
 import { Bot, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 interface ChatHeaderProps {
   onMenuClick?: () => void;
@@ -32,6 +33,7 @@ export const ChatHeader = ({ onMenuClick }: ChatHeaderProps) => {
           <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
           <span className="text-xs text-muted-foreground">在线</span>
         </div>
+        <ThemeToggle />
       </div>
     </header>
   );
