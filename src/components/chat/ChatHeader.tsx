@@ -18,12 +18,12 @@ export const ChatHeader = ({ onMenuClick }: ChatHeaderProps) => {
           <Menu className="h-5 w-5" />
         </Button>
         <div className="flex items-center gap-2">
-          <div className="p-2 rounded-lg bg-primary/10 text-primary">
-            <Bot className="h-6 w-6" />
+          <div className="p-2 rounded-lg bg-gradient-to-br from-chess-red to-chess-gold text-white">
+            <span className="text-lg font-bold">♔</span>
           </div>
           <div>
-            <h1 className="text-lg font-semibold text-foreground">Kimi Chat</h1>
-            <p className="text-xs text-muted-foreground">AI 智能助手</p>
+            <h1 className="text-lg font-semibold text-foreground">弈点通小助手</h1>
+            <p className="text-xs text-muted-foreground">象棋AI智能助手</p>
           </div>
         </div>
       </div>

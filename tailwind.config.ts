@@ -59,6 +59,12 @@ export default {
 					ai: 'hsl(var(--chat-ai))',
 					'ai-foreground': 'hsl(var(--chat-ai-foreground))'
 				},
+				chess: {
+					red: 'hsl(var(--chess-red))',
+					black: 'hsl(var(--chess-black))',
+					gold: 'hsl(var(--chess-gold))',
+					wood: 'hsl(var(--chess-wood))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

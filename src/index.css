@@ -37,19 +37,26 @@ All colors MUST be HSL.
     --input: 240 3.7% 15.9%;
     --ring: 263 70% 50%;
 
-    /* Chat specific colors */
-    --chat-user: 263 70% 50%;
+    /* Chess-themed colors */
+    --chess-red: 0 65% 45%;
+    --chess-black: 240 10% 12%;
+    --chess-gold: 45 100% 50%;
+    --chess-wood: 30 35% 45%;
+    
+    /* Chat specific colors with chess theme */
+    --chat-user: var(--chess-red);
     --chat-user-foreground: 0 0% 98%;
-    --chat-ai: 240 4.8% 15.9%;
+    --chat-ai: var(--chess-black);
     --chat-ai-foreground: 0 0% 98%;
     
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(263 70% 50%), hsl(263 70% 65%));
+    /* Chess-themed gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--chess-red)), hsl(var(--chess-gold)));
     --gradient-background: linear-gradient(180deg, hsl(240 10% 3.9%), hsl(240 8% 6%));
+    --gradient-chess-board: linear-gradient(45deg, hsl(var(--chess-wood)), hsl(30 25% 35%));
     
-    /* Shadows */
-    --shadow-chat: 0 4px 20px hsl(263 70% 50% / 0.2);
-    --shadow-glow: 0 0 30px hsl(263 70% 50% / 0.3);
+    /* Chess-themed shadows */
+    --shadow-chat: 0 4px 20px hsl(var(--chess-red) / 0.2);
+    --shadow-glow: 0 0 30px hsl(var(--chess-gold) / 0.3);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

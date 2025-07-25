@@ -30,9 +30,12 @@ export const ChatContainer = ({ messages, isTyping }: ChatContainerProps) => {
     >
       {messages.length === 0 ? (
         <div className="flex flex-col items-center justify-center h-full text-center">
-          <div className="text-6xl mb-4">🤖</div>
-          <h2 className="text-2xl font-bold text-foreground mb-2">欢迎使用 Kimi Chat</h2>
-          <p className="text-muted-foreground">开始与 AI 助手对话吧</p>
+          <div className="text-6xl mb-4 relative">
+            <span className="inline-block">♔</span>
+            <span className="inline-block ml-2">♕</span>
+          </div>
+          <h2 className="text-2xl font-bold text-foreground mb-2">欢迎使用弈点通小助手</h2>
+          <p className="text-muted-foreground">开始与象棋AI助手对话吧</p>
         </div>
       ) : (
         <>
