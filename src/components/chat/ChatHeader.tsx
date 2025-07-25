@@ -1,0 +1,38 @@
+import { Bot, Menu } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+interface ChatHeaderProps {
+  onMenuClick?: () => void;
+}
+
+export const ChatHeader = ({ onMenuClick }: ChatHeaderProps) => {
+  return (
+    <header className="flex items-center justify-between p-4 border-b border-border bg-background/80 backdrop-blur-sm">
+      <div className="flex items-center gap-3">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={onMenuClick}
+          className="md:hidden"
+        >
+          <Menu className="h-5 w-5" />
+        </Button>
+        <div className="flex items-center gap-2">
+          <div className="p-2 rounded-lg bg-primary/10 text-primary">
+            <Bot className="h-6 w-6" />
+          </div>
+          <div>
+            <h1 className="text-lg font-semibold text-foreground">Kimi Chat</h1>
+            <p className="text-xs text-muted-foreground">AI 智能助手</p>
+          </div>
+        </div>
+      </div>
+      <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1">
+          <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+          <span className="text-xs text-muted-foreground">在线</span>
+        </div>
+      </div>
+    </header>
+  );
+};
